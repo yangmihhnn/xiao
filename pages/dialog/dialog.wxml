@@ -1,0 +1,5 @@
+<view class="container">
+   <block wx:for="{{dialogs}}" wx:for-item="dialog" wx:key="number">
+    <view  bindtap="bindViewTap" class="dialog-item">{{index + 1}}. {{dialog.number}}</view>
+  </block>
+</view>

@@ -1,0 +1,21 @@
+
+<!--index.wxml-->
+<view class="container">
+
+  <!--<view class="function-bar">
+  </view>-->
+  <block wx:for="{{dialogs}}" wx:for-item="dialog" wx:key="number">
+    <view bindtap="bindViewTap" class="dialog-item" id="{{index}}">
+      <view class="avatar">
+        <image src="http://himg.bdimg.com/sys/portrait/item/b6eee88eabe997b2e784b87b2c.jpg"></image>
+      </view>
+      <view class="preview">
+        <view class="up">
+          <view class="sender" style="font-weight:{{dialog.read=='true'?'normal':'bold'}}">{{dialog.number}}</view>
+          <view class="time">23:20</view>
+        </view>
+        <view class="down">nihao ,heloo oidsia</view>
+      </view>
+    </view>
+  </block>
+</view>
